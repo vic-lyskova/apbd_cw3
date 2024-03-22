@@ -1,6 +1,8 @@
-﻿namespace cwiczenia_3.containers;
+﻿using cwiczenia_3.interfaces;
 
-public abstract class Container
+namespace cwiczenia_3.containers;
+
+public abstract class Container : IContainer
 {
     public double CargoWeight { get; set; }
     public double Height { get; set; }
@@ -17,5 +19,15 @@ public abstract class Container
         Depth = depth;
         SerialNumber = serialNumber;
         MaxLoad = maxLoad;
+    }
+
+    public void Unload()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void Load(double cargoWeight)
+    {
+        throw new NotImplementedException();
     }
 }
