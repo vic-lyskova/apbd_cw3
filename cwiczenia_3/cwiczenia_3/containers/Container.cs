@@ -1,6 +1,6 @@
 ﻿namespace cwiczenia_3.containers;
 
-public class Container
+public abstract class Container
 {
     public double CargoWeight { get; set; }
     public double Height { get; set; }
@@ -9,7 +9,7 @@ public class Container
     public string SerialNumber { get; } //TODO serial number type and format?
     public double MaxLoad { get; set; }
 
-    public Container(double cargoWeight, double height, double weight, double depth, string serialNumber, double maxLoad)
+    protected Container(double cargoWeight, double height, double weight, double depth, string serialNumber, double maxLoad)
     {
         CargoWeight = cargoWeight;
         Height = height;
