@@ -1,4 +1,5 @@
-﻿using cwiczenia_3.interfaces;
+﻿using cwiczenia_3.exceptions;
+using cwiczenia_3.interfaces;
 
 namespace cwiczenia_3.containers;
 
@@ -23,11 +24,16 @@ public abstract class Container : IContainer
 
     public void Unload()
     {
-        throw new NotImplementedException();
+        CargoWeight = 0;
     }
 
     public void Load(double cargoWeight)
     {
-        throw new NotImplementedException();
+        if (cargoWeight > MaxLoad)
+        {
+            throw new OverfillException();
+        }
+
+        CargoWeight = cargoWeight;
     }
 }
