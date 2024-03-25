@@ -22,7 +22,7 @@ public class LiquidContainer : Container, IHazardNotifier
             }
             else
             {
-                Notify(SerialNumber);
+                Notify();
             }
         }
         else
@@ -33,13 +33,13 @@ public class LiquidContainer : Container, IHazardNotifier
             }
             else
             {
-                Notify(SerialNumber);
+                Notify();
             }
         }
     }
 
-    public void Notify(string serialNumber)
+    public void Notify()
     {
-        Console.WriteLine("Unsafe situation container " + serialNumber);
+        Console.WriteLine("Unsafe situation container " + SerialNumber);
     }
 }

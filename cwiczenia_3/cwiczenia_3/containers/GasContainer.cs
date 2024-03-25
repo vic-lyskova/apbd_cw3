@@ -13,11 +13,11 @@ public class GasContainer : Container, IHazardNotifier
 
     public override void Unload()
     {
-        base.Unload();
+        CargoWeight = CargoWeight * 0.05;
     }
 
-    public void Notify(string serialNumber)
+    public void Notify()
     {
-        Console.WriteLine("Unsafe situation container " + serialNumber);
+        Console.WriteLine("Unsafe situation container " + SerialNumber);
     }
 }
