@@ -13,8 +13,8 @@ public class LiquidContainer : Container, IHazardNotifier
         base.Load(cargoWeight);
     }
 
-    public void Notify()
+    public void Notify(string serialNumber)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Unsafe situation container " + serialNumber);
     }
 }
