@@ -75,5 +75,18 @@ public class Ship
             shipTo.Load(containerToMove);
         }
     }
+
+    public void GetInfo()
+    {
+        Console.WriteLine("Characteristics of the ship: "
+            + "\nMax speed: " + MaxSpeed
+            + "\nMax amount of containers: " + MaxContainers
+            + "\nMax weight of containers: " + MaxContainersWeight
+            + "\n Containers on board: ");
+        foreach (var container in Containers)
+        {
+            container.GetInfo();
+        }
+    }
     
 }
