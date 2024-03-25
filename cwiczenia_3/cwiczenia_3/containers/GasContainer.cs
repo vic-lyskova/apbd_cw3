@@ -4,8 +4,11 @@ namespace cwiczenia_3.containers;
 
 public class GasContainer : Container, IHazardNotifier
 {
-    public GasContainer(double cargoWeight, double height, double weight, double depth, string containerType, double maxLoad) : base(cargoWeight, height, weight, depth, containerType, maxLoad)
+    public double Pressure { get; set; }
+    public GasContainer(double cargoWeight, double height, double weight, double depth, string containerType, double maxLoad, double pressure) 
+        : base(cargoWeight, height, weight, depth, containerType, maxLoad)
     {
+        Pressure = pressure;
     }
 
     public override void Unload()
