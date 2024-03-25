@@ -2,5 +2,5 @@ namespace cwiczenia_3.interfaces;
 
 public interface IHazardNotifier
 {
-    public void Notify();
+    public void Notify(string serialNumber);
 }
