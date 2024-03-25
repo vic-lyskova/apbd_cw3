@@ -7,8 +7,8 @@ public class RefrigeratedContainer : Container
     public ProductType Product { get; set; }
     public double Temperature { get; set; }
     
-    public RefrigeratedContainer(double cargoWeight, double height, double weight, double depth, string containerType, double maxLoad, ProductType product, double temperature) 
-        : base(cargoWeight, height, weight, depth, containerType, maxLoad)
+    public RefrigeratedContainer(double height, double weight, double depth, string containerType, double maxLoad, ProductType product, double temperature) 
+        : base(height, weight, depth, containerType, maxLoad)
     {
         Product = product;
         double temp = 0;

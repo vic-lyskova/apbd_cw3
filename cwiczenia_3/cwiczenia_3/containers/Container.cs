@@ -14,9 +14,9 @@ public abstract class Container : IContainer
     public string SerialNumber { get; }
     public double MaxLoad { get; set; }
 
-    protected Container(double cargoWeight, double height, double weight, double depth, string containerType, double maxLoad)
+    protected Container(double height, double weight, double depth, string containerType, double maxLoad)
     {
-        CargoWeight = cargoWeight;
+        CargoWeight = 0;
         Height = height;
         Weight = weight;
         Depth = depth;
