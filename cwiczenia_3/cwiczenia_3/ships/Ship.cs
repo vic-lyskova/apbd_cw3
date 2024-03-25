@@ -29,6 +29,10 @@ public class Ship
             Containers.Add(container);
         }
     }
-    
+
+    public void Remove(Container container)
+    {
+        Containers.Remove(container);
+    }
     
 }
