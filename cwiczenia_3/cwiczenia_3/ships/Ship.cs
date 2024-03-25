@@ -39,4 +39,27 @@ public class Ship
     {
         Containers.Clear();
     }
+
+    public void Replace(string serialNumber, Container replacingContainer)
+    {
+        Container? containerToReplace = null;
+        foreach (var container in Containers)
+        {
+            if (container.SerialNumber == serialNumber)
+            {
+                containerToReplace = container;
+                break;
+            }
+        }
+
+        if (containerToReplace != null)
+        {
+            Containers.Remove(containerToReplace);
+            Containers.Add(replacingContainer);
+        }
+        else
+        {
+            Console.WriteLine("No such container on the ship");
+        }
+    }
 }
