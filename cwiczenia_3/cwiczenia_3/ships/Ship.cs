@@ -9,9 +9,9 @@ public class Ship
     public int MaxContainers { get; set; }
     public double MaxContainersWeight { get; set; }
 
-    public Ship(HashSet<Container> containers, double maxSpeed, int maxContainers, double maxContainersWeight)
+    public Ship(double maxSpeed, int maxContainers, double maxContainersWeight)
     {
-        Containers = containers;
+        Containers = new HashSet<Container>();
         MaxSpeed = maxSpeed;
         MaxContainers = maxContainers;
         MaxContainersWeight = maxContainersWeight;
