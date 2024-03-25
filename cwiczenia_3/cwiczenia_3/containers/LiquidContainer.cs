@@ -42,4 +42,10 @@ public class LiquidContainer : Container, IHazardNotifier
     {
         Console.WriteLine("Unsafe situation container " + SerialNumber);
     }
+
+    public override void GetInfo()
+    {
+        base.GetInfo();
+        Console.WriteLine("Unsafe cargo: " + UnsafeCargo);
+    }
 }

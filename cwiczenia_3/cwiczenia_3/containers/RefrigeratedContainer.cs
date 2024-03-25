@@ -73,4 +73,11 @@ public class RefrigeratedContainer : Container
 
         Temperature = temperature;
     }
+
+    public override void GetInfo()
+    {
+        base.GetInfo();
+        Console.WriteLine("Product: " + Product
+        + "\nTemperature: " + Temperature);
+    }
 }

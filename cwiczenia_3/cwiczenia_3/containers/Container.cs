@@ -38,4 +38,15 @@ public abstract class Container : IContainer
 
         CargoWeight = cargoWeight;
     }
+
+    public virtual void GetInfo()
+    {
+        Console.WriteLine("Container serial number: " + SerialNumber
+        + "\nCharacteristics:"
+        + "\nCargo weight: " + CargoWeight 
+        + "\nHeight: " + Height
+        + "\nWeight: " + Weight
+        + "\nDepth: " + Depth
+        + "\nMax load: " + MaxLoad);
+    }
 }
