@@ -4,4 +4,5 @@ public interface IContainer
 {
     public void Unload();
     public void Load(double cargoWeight);
+    public void GetInfo();
 }
