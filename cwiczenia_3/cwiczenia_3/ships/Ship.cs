@@ -16,4 +16,19 @@ public class Ship
         MaxContainers = maxContainers;
         MaxContainersWeight = maxContainersWeight;
     }
+
+    public void Load(Container container)
+    {
+        Containers.Add(container);
+    }
+
+    public void Load(List<Container> containers)
+    {
+        foreach (var container in containers)
+        {
+            Containers.Add(container);
+        }
+    }
+    
+    
 }
