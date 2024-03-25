@@ -15,6 +15,6 @@ public class GasContainer : Container, IHazardNotifier
 
     public void Notify(string serialNumber)
     {
-        throw new NotImplementedException();
+        Console.WriteLine("Unsafe situation container " + serialNumber);
     }
 }
