@@ -62,4 +62,18 @@ public class Ship
             Console.WriteLine("No such container on the ship");
         }
     }
+
+    public static void Move(Ship shipFrom, Ship shipTo, Container containerToMove)
+    {
+        if (!shipFrom.Containers.Contains(containerToMove))
+        {
+            Console.WriteLine("No such container on the ship");
+        }
+        else
+        {
+            shipFrom.Remove(containerToMove);
+            shipTo.Load(containerToMove);
+        }
+    }
+    
 }
