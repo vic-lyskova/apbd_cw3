@@ -34,5 +34,9 @@ public class Ship
     {
         Containers.Remove(container);
     }
-    
+
+    public void Unload()
+    {
+        Containers.Clear();
+    }
 }
