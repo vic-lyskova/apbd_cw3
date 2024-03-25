@@ -82,7 +82,7 @@ public class Ship
             + "\nMax speed: " + MaxSpeed
             + "\nMax amount of containers: " + MaxContainers
             + "\nMax weight of containers: " + MaxContainersWeight
-            + "\n Containers on board: ");
+            + "\nContainers on board: ");
         foreach (var container in Containers)
         {
             container.GetInfo();
